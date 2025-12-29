@@ -1,0 +1,780 @@
+/* -------------------------Global--------------------------- */
+@font-face {
+    font-family:"Montserrat" ;
+    src: url(../font/Montserrat-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family:"Montserrat" ;
+    src: url(../font/Montserrat-BoldItalic.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family:"Montserrat" ;
+    src: url(../font/Montserrat-Italic.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family:"Montserrat" ;
+    src: url(../font/Montserrat-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family:"Montserrat" ;
+    src: url(../font/Montserrat-LightItalic.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family:"Montserrat" ;
+    src: url(../font/Montserrat-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family:"Montserrat" ;
+    src: url(../font/Montserrat-MediumItalic.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family:"Montserrat" ;
+    src: url(../font/Montserrat-Regular.ttf);
+    font-weight: 400;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    font-family: "Montserrat";
+}
+
+
+@media (min-width: 576px) {
+    .container {
+        width: 546px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 738px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width:962px ;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+        margin: 0 auto;
+    }
+}
+
+
+/* --------------------------Header---------------------------- */
+
+
+header {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header-top {
+    width: 100%;
+    background: url(../image/background-header.png) center top/cover no-repeat;
+    padding: 40px 0 20px;
+}
+
+.header-top .logo {
+    text-align: center;
+}
+
+.header-top .logo img {
+    max-width: 180px;
+    width: 20vw;
+    height: auto;
+}
+
+
+.header-bottom {
+    width: 100%;
+    background: #2d5f3f;
+    padding: 20px 0 100px; 
+}
+
+.header-nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header-nav li {
+    text-align: center;
+}
+
+.header-nav a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 25px 20px;
+}
+
+.header-nav a:hover {
+    background: #709700;
+}
+
+@media (min-width: 768px) {
+    .header-bottom {
+        padding: 20px 0 80px;
+    }
+}
+
+@media(min-width: 992px) {
+    .header-top {
+        background: url(../image/background-header.png) center/cover no-repeat;
+        height: 350px; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    
+    .header-top .logo img {
+        max-width: 300px;
+        margin-bottom: 100px;
+    }
+    
+    .header-bottom {
+        background: #2d5f3f;
+        padding: 15px 0; 
+    }
+    
+    .header-nav ul {
+        flex-direction: row;
+        justify-content: center;
+        gap: 40px;
+    }
+    
+    .header-nav a {
+        padding: 10px 20px;
+    }
+}
+
+/*-------------------------MainGeneral---------------------------------*/
+main {
+    width: 100%;
+}
+
+main .container {
+    width: 100%;
+}
+
+
+@media (min-width: 992px) {
+    main:not(.accueil) .main-flex {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    main:not(.accueil) .corps {
+        width: 70%;
+        padding: 30px 20px;
+    }
+
+    main:not(.accueil) .sidebar {
+        width: 30%;
+        border-left: 1px solid #0e0d0d5d;
+        padding: 30px 0 30px 30px;
+    }
+}
+
+/* ----------------------------- SIDEBAR (COMMUNES) ----------------------------- */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.sidebar h1 {
+    color: #2d5f3f;
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 100%;
+    text-align: left;
+}
+
+.sidebar figure {
+    width: 100%;
+    max-width: 300px;
+    margin: 0;
+    text-align: center;
+}
+
+.sidebar img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.sidebar a {
+    display: block;
+    color: #2d5f3f;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 12px;
+    line-height: 1.5;
+    transition: color 0.3s ease;
+}
+
+.sidebar a:hover {
+    color: #709700;
+}
+
+/*---------------------------MainAccueil-------------------------------*/
+
+main.accueil .strong {
+    text-align:center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #2d5f3f;
+    margin: 20px 20px 20px 20px;
+}
+
+main.accueil .normal {
+    text-align: center;
+    font-weight: normal;
+    margin: 20px 20px 70px 20px;
+}
+
+main.accueil .normal a {
+    text-decoration: none;
+    color: #709700;
+}
+.parallax-effect {
+    background-image:url(../image/tree.jpg);
+    height: 200px;
+    width: 100%;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main.accueil .logo {
+    text-align: center;
+}
+main.accueil .logo ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 40px 0 40px 0;
+}
+
+main.accueil .logo li {
+    list-style-type: none;
+}
+
+main.accueil .logo a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main.accueil .logo img {
+    max-width: 140px;
+    width: 20vw;
+    height: auto;
+    padding: 10px 10px 0 10px;
+}
+
+@media(min-width: 992px) {
+    main.accueil .container {
+        width: 100%;
+        max-width: 100%;
+    }
+    main.accueil .main-flex {
+        display: flex;
+        flex-direction: column;
+    }
+    main .parallax-effect{
+        height: 400px;
+        width: 100%;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover; 
+        background-repeat: no-repeat; 
+        margin: 50px 0;
+    }
+    main.accueil .container .logo ul {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content:space-around !important;
+        padding: 30px 0 100px 0;
+    }
+    main.accueil .logo img {
+        width: 140px;  
+        height: 140px; 
+        object-fit: contain; 
+        padding: 10px;
+    }
+    main.accueil .logo li {
+        flex: 1; 
+        max-width: 250px; 
+        list-style-type: none;
+    }
+    
+    main.accueil .logo a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start; 
+        min-height: 200px; 
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+    main.accueil .strong {
+        font-weight: normal;
+        font-size: 1.5rem;
+        margin: 20px 180px 20px 180px;
+        line-height: 1.5;
+    }
+    main.accueil .normal {
+        text-align: center;
+        font-weight: normal;
+        margin: 20px 180px 70px 180px;
+        line-height: 2.0;
+    }
+}
+
+/*--------------------------- MainRecyclage ---------------------------*/
+
+main.recyclage .corps {
+    padding: 20px;
+}
+
+main.recyclage .corps h1 {
+    font-size: 1.8rem;
+    color: #2d5f3f;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+
+main.recyclage .corps p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+main.recyclage .corps ul {
+    margin: 20px 0 20px 30px;
+    line-height: 1.8;
+}
+
+main.recyclage .corps li {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+main.recyclage .corps a {
+    color: #709700;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+main.recyclage .corps a:hover {
+    text-decoration: underline;
+}
+
+main.recyclage .corps img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+}
+
+@media(min-width: 992px) {
+    main.recyclage .corps {
+        padding: 30px 40px 30px 20px;
+    }
+    
+    main.recyclage .corps h1 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    
+    main.recyclage .corps p {
+        font-size: 1rem;
+        line-height: 1.8;
+        margin-bottom: 25px;
+        text-align: left;
+    }
+    
+    main.recyclage .corps ul {
+        margin: 10px 0 25px 35px;
+    }
+    
+    main.recyclage .corps li {
+        margin-bottom: 10px;
+        font-size: 0.95rem;
+    }
+    
+    main.recyclage .corps img {
+        max-width: 100%;
+    }
+}
+/*--------------------------- MainEconomieEnergie ---------------------------*/
+
+
+main.EconomieEnergie .corps {
+    padding: 20px;
+}
+
+main.EconomieEnergie .corps h1 {
+    font-size: 1.8rem;
+    color: #2d5f3f;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+main.EconomieEnergie .corps h4 {
+    font-size: 1.2rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+main.EconomieEnergie .corps p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    text-align: justify;
+}
+
+main.EconomieEnergie .corps ul {
+    margin: 10px 0 20px 20px;
+    line-height: 1.8;
+    list-style-type: disc;
+}
+
+main.EconomieEnergie .corps li {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+main.EconomieEnergie .corps a {
+    color: #709700;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+main.EconomieEnergie .corps a:hover {
+    text-decoration: underline;
+}
+
+main.EconomieEnergie .corps figure {
+    width: 100%;
+    margin: 30px 0;
+    text-align: center;
+}
+
+main.EconomieEnergie .corps img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+}
+
+
+@media(min-width: 992px) {
+    main.EconomieEnergie .corps {
+        padding: 30px 40px 30px 20px;
+    }
+    
+    main.EconomieEnergie .corps h1 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    
+    main.EconomieEnergie .corps h4 {
+        font-size: 1.3rem;
+        margin-top: 35px;
+        margin-bottom: 15px;
+    }
+    
+    main.EconomieEnergie .corps p {
+        font-size: 1rem;
+        line-height: 1.8;
+        margin-bottom: 25px;
+        text-align: left;
+    }
+    
+    main.EconomieEnergie .corps ul {
+        margin: 10px 0 25px 35px;
+    }
+    
+    main.EconomieEnergie .corps li {
+        margin-bottom: 10px;
+        font-size: 0.95rem;
+    }
+    
+    main.EconomieEnergie .corps img {
+        max-width: 100%;
+    }
+}
+
+/*--------------------------- MainCircuitCourt ---------------------------*/
+
+
+main.CircuitCourt .corps {
+    padding: 20px;
+}
+
+main.CircuitCourt .corps h1 {
+    font-size: 1.8rem;
+    color: #2d5f3f;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+main.CircuitCourt .corps p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+main.CircuitCourt .corps a {
+    color: #709700;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+main.CircuitCourt .corps a:hover {
+    text-decoration: underline;
+}
+
+main.CircuitCourt .corps figure {
+    width: 100%;
+    margin: 30px 0;
+    text-align: center;
+}
+
+main.CircuitCourt .corps img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+@media(min-width: 992px) {
+    main.CircuitCourt .corps {
+        padding: 30px 40px 30px 20px;
+    }
+    
+    main.CircuitCourt .corps h1 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    
+    main.CircuitCourt .corps p {
+        font-size: 1rem;
+        line-height: 1.8;
+        margin-bottom: 25px;
+        text-align: left;
+    }
+    
+    main.CircuitCourt .corps img {
+        max-width: 100%;
+    }
+}
+
+/*-----------------------------MainContact------------------------*/
+main.Contact .corps h1 {
+    font-size: 1.8rem;
+    color: #2d5f3f;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+main .main-flex form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px 20px 10px;
+    line-height: 1.5;
+}
+main .main-flex form label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 400;
+    color: #333;
+}
+
+main .main-flex form input,
+main .main-flex form textarea {
+    width: 80%;
+    padding: 10px 10px;
+    margin: 5px 0 15px 0;
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    color: #333;
+    font-family: 'Montserrat';
+    font-size: 0.9rem;
+}
+
+main .main-flex form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+main .main-flex form input[type="submit"] {
+    width: auto;
+    max-width: 200px;
+    padding: 12px 30px;
+    margin: 20px auto 0 auto; 
+    background-color: #2d5f3f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: block; 
+}
+
+main .main-flex form input[type="submit"]:hover {
+    background-color: #709700;
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+/*-----------------------------Footer----------------------------*/
+footer {
+    width: 100%;
+    margin: 0 auto;
+}
+
+footer .container-footer {
+    width: 100%;
+    background: #2d5f3f;
+    padding: 20px 0 100px;
+}
+
+footer .footer-flex ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 10px 10px;
+    margin: 0;
+}
+
+footer .footer-flex .menu , .information {
+    padding: 20px 0 0 20px;
+    color: white;
+    font-size:x-large;
+    font-weight: 400;
+}
+
+footer .footer-flex .suivre {
+    padding: 20px 0 0 20px;
+    color: white;
+    font-size: x-large;
+    font-weight: 400;
+}
+footer .footer-flex .suivre {
+    display: flex;
+    flex-direction: row;
+}
+
+footer .footer-flex li {
+    text-align:left;
+}
+
+footer .footer-flex a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 10px;
+}
+
+@media(min-width: 992px) {
+    footer .container-footer {
+        background: #2d5f3f;
+        padding: 15px 0; 
+        width: 100%;
+    }
+    
+    footer .footer-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around; 
+        align-items: flex-start;
+        max-width: 1200px; 
+        margin: 0 auto; 
+    }
+    
+    footer .footer-flex .menu,
+    footer .footer-flex .information,
+    footer .footer-flex .suivre {
+        padding: 0 0 20px 0;
+        color: white;
+        font-size: 14px;
+        text-transform: uppercase; 
+        font-weight: 400;
+    }
+    footer .footer-flex a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        padding: 8px 0;
+        font-size: 14px;
+    }
+    footer .footer-list-menu a:hover {
+        background: #709700;
+    }
+    footer .footer-list-suivre ul {
+        flex-direction: row;
+        gap: 15px;
+        padding: 0;
+    }
+    footer .footer-list-suivre li {
+        padding: 0;
+    }
+}
